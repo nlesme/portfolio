@@ -1,5 +1,5 @@
 import styles from "./Hero.module.css";
-
+import avatar from "../assets/imgCartoon.png"
 function Hero() {
     return (
         <>
@@ -41,7 +41,7 @@ function Hero() {
                 <div className={styles.heroCardInner}>
                   <img
                       className={styles.heroCardAvatar}   
-                      src="/src/assets/imgCartoon.png"
+                      src={avatar}
                       width="80"
                       height="80" />
                   <div className={styles.heroCardName}>Norbelis</div>

@@ -1,3 +1,6 @@
+import imgDevFinder from "../assets/devfinder.png";
+import imgIvoryStore from "../assets/ivorystore.png";
+
 export const skills = [
     { name: 'HTML',              category: 'Frontend', icon: '🏗️', description: 'Creating clean, semantic page structure for accessible and organized websites.' },
     { name: 'CSS',               category: 'Frontend', icon: '🎨', description: 'Styling responsive layouts, cards, forms, navigation bars, and modern UI sections.' },
@@ -16,7 +19,7 @@ export const skills = [
 
   export const projects = [
     {
-      img: "./src/assets/devfinder.png",
+      img: imgDevFinder,
       title: "GitHub devfinder",
       description:
         "Is a React-based web app designed to help users quickly search and explore GitHub profiles. It connects to the GitHub API and presents developer information in a simple, friendly, and responsive interface. This project helped me strengthen my skills in React components, API requests, routing, conditional rendering, search functionality, and UI organization.",
@@ -26,7 +29,7 @@ export const skills = [
       highlight: true,
     },
     {
-      img: "./src/assets/ivorystore.png",
+      img: imgIvoryStore,
       title: "Sales Portal by Ivory Store",
       description:
         "Is a full-stack web application designed to help small businesses manage and analyze their sales data in one organized platform. The system allows users to view sales orders, track key business metrics, filter order information, review order details, and import sales data from CSV files.",
