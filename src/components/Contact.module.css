@@ -1,0 +1,316 @@
+.contactSection {
+    padding: 60px 60px 0 60px;
+    margin-bottom: 60px;
+    border-top: 1px solid var(--border);
+}
+
+.sectionEyeBrow{
+    font-family: var(--font-mono);
+    color: var(--accent);
+    margin-bottom: 30px;
+}
+
+.title {
+    color: var(--text-muted);
+    font-family: var(--font-display);
+    font-size: 3rem;
+}
+
+.contactInner {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0,1fr) 360px;
+    align-items: center;
+    gap: 40px;
+}
+
+.contactLeft {
+    max-width: 560px;
+    animation: fadeSlideUp 0.9s var(--ease-expo) 0.1s both; 
+}
+
+.contactRight {
+    justify-self:start;
+}
+
+.individualCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactCards {
+    display: flex;
+    background-color: var(--surface);
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    padding: 20px;
+    cursor: pointer;
+}
+
+.contactCards:hover {
+    border: 1px solid var(--border-hi);
+}
+
+.linkIcon {
+    background-color: var(--surface-2);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.linkText {
+    font-family: var(--font-mono);
+    margin-left: 20px;
+    margin-right: 20px;
+    color: var(--text-muted);
+}
+
+.linkText .label {
+    font-family: var(--font-sans);  
+    color: var(--text);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.titleForm {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.subjectGroup, .messageGroup, .btnSend {
+    grid-column: 1 /-1;
+}
+
+
+.label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.formInput, .formTextArea, .formSubject {
+    background-color: var(--text);
+    border-radius: 10px;
+    padding: 20px;
+    font-family: var(--font-sans);
+    color: var(--bg);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.formInput:focus,
+.formTextArea:focus,
+.formSubject:focus {
+  border-color: var(--border-hi);
+  box-shadow: 0 0 0 3px var(--glow-gold);
+}
+
+.formTextArea {
+    height: 130px;
+}
+
+.btnSend {
+   
+    background-color: var(--accent);
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    color: var(--bg);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.showMsg {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    background-color: var(--surface-2);
+    border: 1px solid var(--border-hi);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 1.1rem;
+    color: var(--accent-2);
+}
+
+@media (max-width: 1024px) {
+    .contactSection {
+        padding: 60px 40px 0 40px;
+    }
+
+    .contactInner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        align-items: start;
+    }
+
+    .contactLeft {
+        max-width: 100%;
+    }
+
+    .contactRight {
+        justify-self: stretch;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 2.6rem;
+    }
+
+    .formRow {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .contactCards {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactSection {
+        padding: 50px 24px 0 24px;
+    }
+
+    .sectionEyeBrow {
+        margin-bottom: 18px;
+        font-size: 0.8rem;
+    }
+
+    .title {
+        font-size: 2.3rem;
+        line-height: 1.05;
+    }
+
+    .contactInner {
+        gap: 40px;
+    }
+
+    .description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .contactCards {
+        padding: 16px;
+    }
+
+    .individualCard {
+        justify-content: flex-start;
+    }
+
+    .linkText {
+        margin-left: 14px;
+        margin-right: 0;
+        font-size: 0.85rem;
+    }
+
+    .titleForm {
+        font-size: 1.35rem;
+    }
+
+    .formRow {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .subjectGroup,
+    .messageGroup,
+    .btnSend {
+        grid-column: auto;
+    }
+
+    .formInput,
+    .formTextArea,
+    .formSubject {
+        padding: 18px;
+    }
+
+    .btnSend {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactSection {
+        padding: 40px 18px 0 18px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .contactCards {
+        padding: 14px;
+    }
+
+    .linkIcon {
+        padding: 6px;
+        flex-shrink: 0;
+    }
+
+    .linkText {
+        font-size: 0.78rem;
+    }
+
+    .formInput,
+    .formTextArea,
+    .formSubject {
+        padding: 16px;
+        font-size: 0.95rem;
+    }
+
+    .formTextArea {
+        height: 150px;
+    }
+
+    .btnSend {
+        padding: 18px;
+        font-size: 0.95rem;
+    }
+
+    .showMsg {
+        left: 18px;
+        right: 18px;
+        bottom: 20px;
+        justify-content: center;
+        text-align: center;
+        padding: 16px;
+    }
+}
