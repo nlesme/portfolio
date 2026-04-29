@@ -3,8 +3,8 @@
   --bg-2:         #131316;
   --surface:      #18181d;
   --surface-2:    #202027;
-  --border:       rgba(255, 255, 255, 0.07);
-  --border-hi:    rgba(232, 180, 100, 0.35);
+  --border:       #FFFFFF12;
+  --border-hi:    #E8B46459;
  
   --text:         #eeeae2;
   --text-muted:   #8a8880;
@@ -14,8 +14,8 @@
   --accent-2:     #7ec8b0;   /* sage green */
   --accent-3:     #c47ea0;   /* dusty rose */
  
-  --glow-gold:    rgba(232, 180, 100, 0.12);
-  --glow-sage:    rgba(126, 200, 176, 0.10);
+  --glow-gold: #E8B4641F;
+  --glow-sage: #7EC8B01A;
  
   --nav-h:        68px;
   --font-display: 'Instrument Serif', Georgia, serif;
