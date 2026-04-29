@@ -1,5 +1,5 @@
 import imgDevFinder from "../assets/devfinder.png";
-import imgIvoryStore from "../assets/ivorystore.png";
+
 
 export const skills = [
     { name: 'HTML',              category: 'Frontend', icon: '🏗️', description: 'Creating clean, semantic page structure for accessible and organized websites.' },
@@ -27,18 +27,7 @@ export const skills = [
       live: "https://github-devfinder-project.netlify.app/",
       repo: "https://github.com/nlesme/github-devfinder",
       highlight: true,
-    },
-    {
-      img: imgIvoryStore,
-      title: "Sales Portal by Ivory Store",
-      description:
-        "Is a full-stack web application designed to help small businesses manage and analyze their sales data in one organized platform. The system allows users to view sales orders, track key business metrics, filter order information, review order details, and import sales data from CSV files.",
-      tech: ["JavaScript", "React","HTML", "CSS","Node.js","Express", "Prisma", "PostgreSQL", "REST APIs"],
-      live: "#",
-      repo: "#",
-      highlight: false,
     }
-    
   ];
 
   export const links = [
