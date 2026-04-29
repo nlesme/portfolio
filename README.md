@@ -5,7 +5,7 @@ The goal of this project is to present my skills, selected projects, and contact
 
 ## Live Demo
 
-[View Portfolio]
+[View Portfolio](https://nlesme.github.io/portfolio/)
 
 ## Screenshots
 

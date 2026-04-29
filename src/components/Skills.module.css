@@ -9,7 +9,7 @@
   }
 
 .skillsSection {
-    padding: 60px 60px 0;
+    padding: 60px 60px 0 60px;
     border-top: 1px solid var(--border);
 }
 
@@ -128,12 +128,10 @@
 
 .marqueeContainer {
     margin-top: 64px;
-    margin-bottom: 60px;
     overflow: hidden;
     padding: 20px 0;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
-    
 }
 
 .marqueeContent {
