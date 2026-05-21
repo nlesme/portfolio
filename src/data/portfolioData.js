@@ -1,5 +1,5 @@
 import imgDevFinder from "../assets/devfinder.png";
-
+import imgBridalStore from "../assets/bridalstore.png";
 
 export const skills = [
     { name: 'HTML',              category: 'Frontend', icon: '🏗️', description: 'Creating clean, semantic page structure for accessible and organized websites.' },
@@ -22,16 +22,27 @@ export const skills = [
       img: imgDevFinder,
       title: "GitHub devfinder",
       description:
-        "Is a React-based web app designed to help users quickly search and explore GitHub profiles. It connects to the GitHub API and presents developer information in a simple, friendly, and responsive interface. This project helped me strengthen my skills in React components, API requests, routing, conditional rendering, search functionality, and UI organization.",
+        "A React-based web app designed to help users quickly search and explore GitHub profiles. It connects to the GitHub API and presents developer information in a simple, friendly, and responsive interface. This project helped me strengthen my skills in React components, API requests, routing, conditional rendering, search functionality, and UI organization.",
       tech: ["React", "HTML", "CSS Modules", "API GitHub"],
       live: "https://github-devfinder-project.netlify.app/",
       repo: "https://github.com/nlesme/github-devfinder",
       highlight: true,
+    },
+    {
+      img: imgBridalStore,
+      title: "Bridal Store Sales Dashboard",
+      description:
+        "A full-stack sales dashboard built for a bridal store to manage online orders, refunds, and KPI reporting. It supports CSV imports and period-based insights by month, quarter, semester, year, and source.",
+      tech: ["React", "HTML", "CSS Modules", "Node.js", "Express", "Prisma", "PotgreSQL"],
+      live: "https://drive.google.com/file/d/1jVdbclcMRgoo38yhVxuD-KKwOVt4_p2i/view?usp=sharing",
+      repo: "https://github.com/nlesme/bridal-store",
+      highlight: true,
     }
+
   ];
 
   export const links = [
     { icon: '📧', label: 'Email',   sub: 'nlesme244@email.com',       href: 'mailto:nlesme244@email.com' },
     { icon: '🐙', label: 'GitHub',  sub: 'github.com/nlesme',      href: 'https://github.com/nlesme' },
-    { icon: '💼', label: 'LinkedIn',sub: 'linkedin.com/in/norbelis-desiree-lesme-ojeda-596077246/', href: 'https://www.linkedin.com/in/norbelis-desiree-lesme-ojeda-596077246/' },
+    { icon: '💼', label: 'LinkedIn',sub: 'https://www.linkedin.com/in/norbelis-lesme-596077246/', href: 'https://www.linkedin.com/in/norbelis-lesme-596077246/' },
   ]
